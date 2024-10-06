@@ -10,17 +10,20 @@ import Contact from './Pages/Contact'
 import Signup from './Pages/Signup'
 import Appointments from './Pages/Appointments'
 import NotFound from './Pages/NotFound'
+import Navbar from './Components/Navbar'
  
  function App() {
    return (
       <>
       <div>
         <BrowserRouter>
+        <Navbar/>
          <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>} />
           <Route path='/contact' element={<Contact/>} />
-          <Route path='/doctor/:speciality' element={<Doctor/>} />
+          <Route path='/doctor' element={<Doctor/>} />
+          {/* <Route path='/doctor/:speciality' element={<Doctor/>} /> */}
           <Route path='/login' element={<Login/>} />
           <Route path='/my-appointment' element={<MyAppointments/>} />
           <Route path='/my-profile' element={<MyProfile/>} />
