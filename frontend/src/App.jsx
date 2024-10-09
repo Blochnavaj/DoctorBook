@@ -22,8 +22,8 @@ import Navbar from './Components/Navbar'
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>} />
           <Route path='/contact' element={<Contact/>} />
-          <Route path='/doctor' element={<Doctor/>} />
-          {/* <Route path='/doctor/:speciality' element={<Doctor/>} /> */}
+          {/* <Route path='/doctor' element={<Doctor/>} /> */}
+          <Route path='/doctor/:speciality' element={<Doctor/>} />
           <Route path='/login' element={<Login/>} />
           <Route path='/my-appointment' element={<MyAppointments/>} />
           <Route path='/my-profile' element={<MyProfile/>} />

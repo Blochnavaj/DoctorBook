@@ -8,5 +8,9 @@
   
 }
 
+::-webkit-scrollbar{
+  @apply hidden
+}
+
  
  
