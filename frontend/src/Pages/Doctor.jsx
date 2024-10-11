@@ -1,8 +1,12 @@
 import React from 'react'
-
+ 
 function Doctor() {
-  return (
-    <div>Doctor</div>
+  
+   return (
+    <>
+     <div>doctors</div>
+     {/* 1:53:21 */}
+    </>
   )
 }
 

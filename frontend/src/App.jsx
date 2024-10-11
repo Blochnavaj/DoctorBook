@@ -11,6 +11,7 @@ import Signup from './Pages/Signup'
 import Appointments from './Pages/Appointments'
 import NotFound from './Pages/NotFound'
 import Navbar from './Components/Navbar'
+import Footer from './Components/Footer'
  
  function App() {
    return (
@@ -22,7 +23,7 @@ import Navbar from './Components/Navbar'
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>} />
           <Route path='/contact' element={<Contact/>} />
-          {/* <Route path='/doctor' element={<Doctor/>} /> */}
+          <Route path='/doctor' element={<Doctor/>} />
           <Route path='/doctor/:speciality' element={<Doctor/>} />
           <Route path='/login' element={<Login/>} />
           <Route path='/my-appointment' element={<MyAppointments/>} />
@@ -31,6 +32,7 @@ import Navbar from './Components/Navbar'
           <Route path='/appiontments/:docId' element={<Appointments/>} />
           <Route path='*' element={<NotFound/>} />
          </Routes>
+         <Footer/>
         </BrowserRouter>
       </div>
       </>
