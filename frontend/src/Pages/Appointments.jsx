@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { AppContext } from '../Context/App.Context';
 import { assets } from '../assets/assets';
-
+ 
 function Appointments() {
   const { docId } = useParams();
   const { doctors, currencySymbol } = useContext(AppContext);
@@ -134,7 +134,10 @@ function Appointments() {
                 ))
               }
             </div>
+           
             <button className='bg-primary text-white text-sm font-light px-14 py-3 rounded-full my-6 '>Book an Appointment</button>
+            {/* Listing Related Doctors  */}
+            
           </div>
     </>
   );
